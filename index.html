@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script defer src="index.js"></script>
+<body>
+    <div class="heading">
+        <h1>BASIC HTML FORM WITH JAVASCRIPT FORM VALIDATION</h1>
+    </div>
+    <div class="container">
+    <form action="/" method="GET" id="form" class="form">
+        
+        <h2 style="text-decoration: underline;">Personal Details: </h2>
+
+        <label for="name">Full Name: </label>
+        <input type="text" name="fname" id="fname" placeholder="First Name">
+       
+         <input type="text" name="lname" id="lname" placeholder="Last Name">
+        
+
+        <br><label for="password">Password: </label>
+        <input type="password" name="password" size="23" id="password" placeholder="Must be 6-12 characters long">
+       
+
+        <br><label for="email">Email Address: </label>
+        <input type="email" id="email" name="email" size="30" placeholder="email@abc.com">
+      
+
+        <br>  Gender:
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label>
+
+        <br><label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob">
+        
+    <div class="edu">
+        <h2 style="text-decoration: underline ;">Educational Details:</h2>
+        
+        <label for="clg">College name: </label>
+        <input type="text" id="clg" name="clg" size="31" placeholder="College Name">
+
+        <br><label for="branch">Branch: </label>
+        <select name="branch" id="branch">
+            <option selected>---Select Branch---</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="cse">Computer Science Engineering</option>
+            <option value="mech">Mechanical Engineering</option>
+            <option value="ece">Electronics and Communication Engineering</option>
+            <option value="eee">Electrical and Electronics Engineering</option>
+            <option value="ise">Industrial and Systems Engineering</option>
+        </select>
+
+            <div class="error" id="error"></div>
+
+        <div class="btn">    
+        <br><button type="submit" class="submit" id="submit">Submit</button>
+        <input type="reset" class="reset">
+        </div>
+
+    </div>
+    </form>
+    
+
+    
+</div>  
+    </div>
+</body>
+</html>
